@@ -1,12 +1,139 @@
 <!DOCTYPE html>
-	<html lang="pl-PL">
-	<html>
-			<head>
-				<meta charset="utf-8">
-				<title>formularz_karwowski</title>
-			</head>
-		<body>
-		Tutaj będzie formularz
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Karwowski_formularz</title>
+</head>
+<body>
+
+    <fieldset>
+        <legend><align=center><font size=6>FORMULARZ DOTYCZĄCY PREFERENCJI KAWOWYCH</font></legend><br><br>
+        Imię:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="text" id="imie" name="imie" required>
+
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Wybierz wiek:
+        <select id="wiek" name="wiek">
+            <option value="-">-</option>
+            <option value="14-17">14-17</option>
+            <option value="18-25">18-25</option>
+
+        </select>
+<br>
+        Nazwisko:
+        <input type="text" id="nazwisko" name="nazwisko" required>
+<br>
+        <label for="email">E-mail:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <input type="email" id="email" name="email" required>
+<br>
+<br>
+        <u><b>Ile kaw pijesz dziennie?</u></b>
+<br>
+        <input type="radio" id="zadna" name="ilosc_kaw" value="zadna" required>
+        <label for="bezkawy">Żadna</label>
+<br>
+        <input type="radio" id="1kawa" name="ilosc_kaw" value="1 kawa">
+        <label for="1kawa">1 kawa</label>
+<br>
+        <input type="radio" id="2-3kawy" name="ilosc_kaw" value="2-3 kawy">
+        <label for="2-3kawy">2-3 kawy</label>
+<br>
+        <input type="radio" id="4iwiecej" name="ilosc_kaw" value="4 lub więcej kaw">
+        <label for="4iwiecej">4 lub więcej kaw</label>
+		
+<br>
+<br>
+
+
+
+		<label for="preferencja"><u><b>Preferujesz kawę parzoną z ziaren czy instant?</u></b></label>
+<br>
+		<input type="radio" id="ziarna" name="preferencja" value="ziarna" required>
+        <label for="ziarna">Ziarna</label>
+<br>
+		<input type="radio" id="ziarna" name="preferencja" value="ziarna" required>
+        <label for="instant">Instant</label>
+<br>
+		<input type="radio" id="ziarna" name="preferencja" value="ziarna" required>
+        <label for="bezpreferencji">Nie mam preferencji</label>
+<br>
+<br>
+
+
+
+
+        <label for="ulubiona_kawa"><u><b>Jaką kawę najbardziej lubisz?</u></b></label>
+<br>
+		<input type="radio" id="espresso" name="ulubiona" value="espresso" required>
+        <label for="espresso">Espresso</label>
+<br>
+		<input type="radio" id="Americano" name="ulubiona" value="Americano" required>
+        <label for="Americano">Americano</label>
+<br>
+		<input type="radio" id="Cappuccino" name="ulubiona" value="Cappuccino" required>
+        <label for="Cappuccino">Cappuccino</label>
+<br>
+		<input type="radio" id="Latte" name="ulubiona" value="Latte" required>
+        <label for="Latte">Latte</label>
+<br>
+		<input type="radio" id="Mocha" name="ulubiona" value="Mocha" required>
+        <label for="Mocha">Mocha</label>
+<br>
+		<input type="radio" id="Inna" name="ulubiona" value="Inna" required>
+        <label for="Inna">Inna (proszę podać)</label>
+		<br>
+		&emsp;&nbsp;&nbsp;<input type="inna" id="inna" name="inna" required>
+		
+<br>
+<br>		
+		
+		
+
+
+        <label><u><b>Czy uważasz kawę za dodatkowe źródło energii?</u></b></label><br>
+		1.Tak<br>
+		2.Nie<br>
+		<b>Wybierz BUTTON</b><br>
+		<input type="button" id="tak" value="TAK" required>
+		<input type="button" id="nie" value="NIE" required>
+<br><br>
+
+
+
+
+
+		<label for="pora"><u><b>Kiedy głównie pijesz kawę?</u></b></label>
+<br>
+		<input type="radio" id="rano" name="pora" value="rano" required>
+        <label for="rano">Rano</label>
+<br>
+		<input type="radio" id="poludnie" name="pora" value="poludnie" required>
+        <label for="poludnie">Po południu</label>
+<br>
+		<input type="radio" id="wieczor" name="pora" value="wieczor" required>
+        <label for="wieczor">Wieczorem</label>
+<br>
+		<input type="radio" id="roznie" name="pora" value="roznie" required>
+        <label for="roznie">O różnych porach dnia</label>
+<br>
+<br>
+
+
+
+		
+		<label><u><b>Czy masz jakieś ulubione miejsca, gdzie serwują twoją ulubioną kawę?</u></b></label>
+<br>
+		<font size=1>maks. 255 znaków<br>
+		<input type="text" id="text" name="text" required minlength="1" maxlength="255">
+
+    </fieldset>
+
+    <input type="submit" value="Wyślij">
+	<input type="reset" value="Reset">
+</form>
+
+<br>
+
+			
 		<a href="https://mk081027.github.io/zadanie1/zad1_kar.html">powrót</a>
 		</body>
 	</html>
